@@ -1,4 +1,6 @@
+"""This is a Number Guessing game which takes a range of numbers specified by the user. It stores a number from the specified range at random and asks the user to guess the number."""
 import random
+# takes a range of numbers from zero to user specified (ex: 10, the program takes from 0 to 10 numbers.)
 number = input("Please enter the range of numbers: ")
 
 if number.isdigit():
@@ -10,6 +12,7 @@ else:
     print("Enter a valid number")
     quit()
 
+# the program selecting a number at random from the given range of numbers. 
 random_number = random.randint(0, number)
 guess_count = 0
 
