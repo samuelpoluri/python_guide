@@ -19,7 +19,6 @@ def weight():
 def distance():
     unit = input("Select your input unit (M)eters or (F)eet? ")
     distance = float(input("Distance: "))
-    # unit = input("Convert to (M)ts or (F)ts: ")
     if unit.upper() != "F":
         converted = distance * 3.28084
         print("Distance in Feet is:", converted)
